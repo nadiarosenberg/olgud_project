@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "autor" content="Nadia Belen">
+    <meta name = "keywords" content = "cerveza artesanal santa fe olgud proceso">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerveza artesanal Olgud</title>
+    <link rel = "icon" href = "imagenes\beer1.ico"/>
+    <link rel="stylesheet" type="text/css" href="estilos\style_olgud.css"/>
+</head>
+<body>
+<header id="header">
+    <nav>
+      <div class="logo_olgud">
+        <a title="Volver a inicio" href="index.html"><img src="imagenes\logo_olgud.png" class="img_logo"/></a>
+      </div>
+      <input id="open-close" name="open-close" type="checkbox" value="" />
+      <label for="open-close" class="burger_button">≡</label>   
+      <div class="nav-fostrap">
+          <ul class="left">
+            <li><a href="nosotros.html">¿Quiénes somos?</a></li>
+            <li><a href="proceso.html">Nuestro proceso</a></li>
+          </ul>
+          <ul class="right">
+              <li><a href="javascript:void(0)">Cultivo del lúpulo<span class="arrow-down"></span></a>
+                  <ul class="dropdown">
+                    <li><a href="que_es.html">¿Qué es el lúpulo?</a></li>
+                    <li><a href="empezar.html">Cómo empezar</a></li>
+                    <li><a href="primer_año.html">Primer año</a></li>
+                    <li><a href="cosecha.html">Cosecha</a></li>
+                  </ul>
+                </li>
+                <li><a href="tienda.html">Tienda</a></li>
+          </ul>  
+      </div>
+      </nav>
+</header>
+      <main>
+        <div id="body">
+          <div class="banner">
+              <h1 class="title">¿Quiénes somos?</h1>
+              <img class="img_banner" src="imagenes/nosotros.jpg">
+              <img class="img_banner2" src="imagenes/nosotros2.jpg">
+          </div>
+          <h2>Cerveza Olgud</h2>
+          <p>Somos una cervecería de garaje santafesina que se dedica desde 2017 a hacer cerveza totalmente artesanal, 
+            sin procesos automatizados. Esto hace que ninguna de nuestras cervezas sea igual a la anterior: se generan 
+            nuevos sabores en cada cocción. 
+          </p>
+          <p>
+            Tenemos 4 estilos fijos y varios estilos especiales que fabricamos según la estación, con pequeñas variantes
+            dependiendo de lo que estemos experimentando en la cocina en ese momento. Además, plantamos nuestro propio lúpulo
+            y confeccionamos una guía con experiencia de cultivo en zonas que no son tan aptas para esta planta.
+          </p>
+          <h2>¿Dónde estamos?</h2>
+          <iframe class="map" title="Ubicación" 
+          src="https://www.google.com/maps/d/embed?mid=1j4a89-DFXzXAeaEjZFGETUCaiR9-rs6W" ></iframe>
+          </iframe>
+          <h2>¡Contactete con nosotros!</h2>
+          <form action="#" target="" method="get" name="formDatosPersonales">
+            <div class="form1">
+              <div class="row1">
+                <label for="nombre"> Nombre: </label>
+                <input type="text" name="nombre" id="nombre" required/>
+              </div>
+              <div class="row1">
+                <label for="apellidos"> Apellido: </label>
+                <input type="text" name="apellidos" id="apellidos" required/>
+              </div>
+              <div class="row1">
+                <label for="email"> Email: </label>
+                <input type="email" name="email" id="email" required />
+              </div>
+              <div class="row1">
+                <label for="asunto"> Asunto: </label>
+                <input type ="text" name="asunto" id="asunto" required/>
+              </div>
+              <div class="row1">
+                <label for="mensaje"> Mensaje: </label>
+                <textarea name="mensaje" for="mensaje" 
+                placeholder=" Escriba aquí su mensaje" maxlength="500" required></textarea>
+              </div>
+              <div class="row1">
+                <input type="submit" name="enviar" value="Enviar"/>
+              </div>
+            </div>
+          </form>
+        </div>
+      </main>
+      <footer id="footer">
+            <h3 class="title_footer">Cerveza Ølgud</h3>
+            <p class="p_footer">Ciudad de Santa Fe, Argentina</p>
+            <a title="Perfil de Instagram" href="https://www.instagram.com/olgudcraftbeer/" target=blank><img src="Imagenes\instagram.png" alt="Instagram" id="instagram" /></a>
+          </div>
+      </footer>
+</body>
+</html>
