@@ -1,2 +1,2 @@
 # olgud_project
-# cervezaolgud.netlify.app
+# https://cervezaolgud.netlify.app/
