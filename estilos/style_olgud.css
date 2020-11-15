@@ -183,7 +183,6 @@
 
 #footer .p_footer {
     font-size: 1rem;
-    padding-bottom: 0.3rem;
     font-family: 'Arimo', sans-serif;
     color: white;
     text-align: center;
@@ -221,6 +220,7 @@
     z-index: -1;
     opacity: 0.8;
     text-shadow: 2px 2px 5px black;
+    color: rgb(233, 229, 229);
 }
 
 .text_float1{
@@ -269,6 +269,7 @@
 #body{
     margin: 0;
     padding: 0;
+    position: relative;
 }
   
 .banner{
@@ -277,7 +278,6 @@
     align-items: center;
     justify-content: center;
     object-fit: contain;
-    max-height: 400px;
     width: 100%;
 }
   
@@ -652,48 +652,90 @@ form input[type="submit"]:hover{
 }
 
 /*------------------------------------CÓMO EMPEZAR Y PRIMER AÑO-------------------------*/
-.h2_content{
-      font-size:1.6rem;
+/*Articulos desplegables */
+.header_collapse{
+    position: relative;
+    border: 1px solid black;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    background-color:#520909;
+    border-bottom: 1px solid black;
+    border-top-right-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
 }
-.list_titles li{
-      margin-left: 1.1rem;
-      font-family:  'Arimo', sans-serif;
-      font-size: 1.3rem;
-      padding: 0.5rem 0 0.5rem 0;
-}  
-  
-.list_titles a{
-      font-family:  'Arimo', sans-serif;
-      text-decoration: none;
-      color:#520909;
-}  
-.list_titles a:hover{
-      font-size: 1.4rem;
-}  
-.list_titles a:visited{
-      font-weight: bold;
+
+.title1{
+    margin: 0;
+    margin-left: 1%;
+    padding: 1%;
+    position: relative;
+    display: inline-block;
+    color: white;
+    opacity: 0.9;
+    font-weight: 400;
+    font-size: 1.4rem;
 }
-.table_list{
-      padding: 1% 3% 1% 3%;
-      margin-left: 3.5rem;
-      width: fit-content;
-      border: 1px solid #5209096e;
-      background-color: rgba(243, 241, 241, 0.452);
-      border-radius: 0.5rem;
+
+
+#link1{
+    position: absolute;
+    display: inline-block;
+    right: 2%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline:none;
 }
-  
+
+#icon_open{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+#article_collapse1, #article_collapse2,
+#article_collapse3, #article_collapse4,
+#article_collapse5{
+    position: relative;
+    border: 1px solid black;
+    border-top: none;
+    width: 90%;
+    margin: auto;
+    padding: 0;
+    height: 84px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    text-overflow: -o-ellipsis-lastline;
+    margin-bottom: 5%;
+    border-bottom-right-radius: 0.7rem;
+    border-bottom-left-radius: 0.7rem;
+}
+
+#text_collapse{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-indent: 0;
+    margin: 1% 2% 1% 2%;
+}
+
 /*-------------------------------------- TIENDA---------------------------*/
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .h1_store{
     font-family: 'Merriweather Sans', sans-serif;
     text-transform: uppercase;
     text-shadow: 2px 2px 5px black;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-    width: 100%;
+    color: rgb(233, 229, 229);
+    position: absolute;
+    font-size: 3rem;
 }
 
 .img_store, 
@@ -708,12 +750,6 @@ form input[type="submit"]:hover{
 .img_store2,
 .img_store3{
     display: none;
-}
-
-h1{
-    position: absolute;
-    color: rgb(233, 229, 229);
-    font-size: 3rem;
 }
 
 /* -------------------------------------- RESPONSIVE ----------------------------*/
@@ -854,11 +890,9 @@ h1{
     }
     .text_float1{
         font-size: 2.2rem;
-        /*color: blue;*/
     }
     .text_float2{
         font-size: 1.7rem;
-        /*color: blue;*/
     }
 
     /* Imagen index */
@@ -876,11 +910,10 @@ h1{
 
     /* Formulario */
     .form1{
-        width: 50%; /* Tamaño de la tabla */
+        width: 50%; 
     }
     form label, form label input[type="text"],
     form label input[type="email"], textarea{
-        /* Para acomodar los campos al cambiar la disposicion del form */
         margin-bottom: 0.4rem;
     }
     form label input[type="submit"]{
@@ -903,11 +936,9 @@ h1{
     }
     .text_float1{
         font-size: 1.7rem;
-        /*color: red;*/
     }
     .text_float2{
         font-size: 1.4rem;
-        /*color: red;*/
     }
 
     /* Banner */
@@ -961,6 +992,11 @@ h1{
     .form1{
         width: 60%;
     }
+
+    /* Caja desplegable */
+    .title1{
+        font-size: 1.3rem;
+    }
 }
 
 @media only screen and (max-width:480px) {
@@ -982,5 +1018,8 @@ h1{
 
     h2{
         font-size: 1.4rem; 
+    }
+    .title1{
+        font-size: 1.2rem;
     }
 }

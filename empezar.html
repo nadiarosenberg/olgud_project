@@ -8,6 +8,7 @@
     <title>Cultivo de lúpulo</title>
     <link rel = "icon" href = "imagenes\beer1.ico"/>
     <link rel="stylesheet" type="text/css" href="estilos\style_olgud.css"/>
+    <script src="js\script2.js"></script>
 </head>
 <body>
     <header id="header">
@@ -36,101 +37,136 @@
         </div>
         </nav>
     </header>
-    <body>
-      <div id="body">
+    <div id="body">
           <div class="banner">
               <h1 class="title">Cómo empezar</h1>
               <img class="img_banner" src="imagenes\como_empezar.jpg">
               <img class="img_banner2" src="imagenes\como_empezar2.jpg">
+          </div>          
+          <h2>Contenidos</h2>
+          <div class="header_collapse">
+              <h2 class="title1">Almacenamiento de rizoma</h2>
+              <button id="link1" onclick="show(event, 'article_collapse1')"><img id="icon_open" src="imagenes/mas.png"></button>
           </div>
-          <h2 class="h2_content">Contenidos</h2>
-          <div class="table_list">
-              <ol class="list_titles">
-                  <li><a href="#titulo1">Preparación de maceta o suelo</a></li>
-                  <li><a href="#titulo2">Ubicación</a></li>
-                  <li><a href="#titulo3">Elección de la especie</a></li>
-              </ol>
-          </div>
-          <h2 id="titulo1">1. Preparación de maceta o suelo</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-              cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
-              officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
-              magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
-              Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
-              quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
-              obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
-              placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-              commodi?</p>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-            cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
-            officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
-            magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
-            Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
-            quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
-            obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
-            placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-            commodi?</p>
-          <br>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-             cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
-             officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
-             magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
-             Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
-             quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
-             obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
-             placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-             commodi?</p> 
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-                cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+          <div id="article_collapse1">
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, 
+                voluptatibus consectetur 
                 officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
                 magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
                 Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
                 quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
                 obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
                 placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-                commodi?</p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-                 cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
-                 officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
-                 magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
-                 Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
-                 quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
-                 obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
-                 placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-             commodi?</p> 
-          <h2 id="titulo2">2. Ubicación</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-            cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
-            officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
-            magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
-            Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
-            quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
-            obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
-            placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-            commodi?</p>
-          <h2 id="titulo3">3. Elección de la especie</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-            cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
-            officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
-            magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
-            Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
-            quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
-            obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
-            placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-            commodi?</p>
-            <br>
-           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi provident esse animi quas itaque 
-            cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
-            officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
-            magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
-            Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
-            quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
-            obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
-            placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
-            commodi?</p>       
-      </div>
+                commodi?</p> 
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium,
+                voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+          </div>
+          <div class="header_collapse">
+            <h2 class="title1">Lupulo en maceta</h2>
+            <button id="link1" onclick="show(event, 'article_collapse2')"><img id="icon_open" src="imagenes/mas.png"></button>
+          </div>
+          <div id="article_collapse2">
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+          </div>
+          <div class="header_collapse">
+            <h2 class="title1">Llegando la primavera</h2>
+            <button id="link1" onclick="show(event, 'article_collapse3')"><img id="icon_open" src="imagenes/mas.png"></button>
+          </div>
+          <div id="article_collapse3">
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+          </div>
+          <div class="header_collapse">
+            <h2 class="title1">Cuidados de altas temperaturas</h2>
+            <button id="link1" onclick="show(event, 'article_collapse4')"><img id="icon_open" src="imagenes/mas.png"></button>
+          </div>
+          <div id="article_collapse4">
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+          </div>
+          <div class="header_collapse">
+            <h2 class="title1">Lugar</h2>
+            <button id="link1" onclick="show(event, 'article_collapse5')"><img id="icon_open" src="imagenes/mas.png"></button>
+          </div>
+          <div id="article_collapse5">
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+              <p id="text_collapse">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Nisi provident esse animi quas itaque cupiditate corporis ipsa dignissimos quibusdam rem, ex praesentium, voluptatibus consectetur 
+                officiis facere voluptatum voluptas aperiam cum? Quaerat laudantium quisquam, voluptate similique
+                magni dolorem! Perspiciatis delectus facere eius consequatur reprehenderit quis eum perferendis!
+                Illo amet tempora ea quia dolor fuga voluptas. Voluptatibus recusandae velit odio repellat totam,
+                quibusdam nihil eligendi quo dolorum eaque ipsam adipisci. Numquam, nostrum quia? Facere commodi
+                obcaecati aut ad eveniet quam, accusantium ipsa aspernatur possimus vitae ratione, veniam mollitia
+                placeat, quidem cumque sunt molestiae voluptatibus in fugit autem dignissimos quae omnis! Vel, 
+                commodi?</p> 
+          </div>
+    </div>
       <footer id="footer">
           <h3 class="title_footer">Cerveza Ølgud</h3>
           <p class="p_footer">Ciudad de Santa Fe, Argentina</p>
